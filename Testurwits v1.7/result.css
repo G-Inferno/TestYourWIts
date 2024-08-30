@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'Jersey 10';
+    src: url('assets/Jersey10-Regular.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.container {
+    background-color: #3c79d4c0;
+    color: white;
+    padding: 2vh 2vw; /* Padding in viewport units */
+    border-radius: 1vw;
+    text-align: center;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    max-width: 90vw; /* Prevent the container from getting too large */
+    max-height: 90vh; /* Prevent the container from getting too tall */
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.game-over {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 10vw; /* Font size in viewport units */
+    font-weight: 200;
+    color: orange;
+    -webkit-text-stroke: 1px black;
+    margin: 2vh 0;
+    overflow: hidden; /* Ensure text doesn't overflow */
+    box-sizing: border-box;
+}
+
+.message {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 5vw; /* Font size in viewport units */
+    color: white;
+    -webkit-text-stroke: 0.1vw #ff0000;
+    text-shadow: 5vw 0.3w 0.4vw rgb(2, 2, 2);
+    margin: 2vh 0;
+}
+
+.image {
+    width: 20vw; /* Width in viewport units */
+    height: auto;
+    border-radius: 1vw;
+}
+
+.arrow {
+    width: 20vw; /* Width in viewport units */
+    height: auto;
+    border-radius: 1vw;
+    position: absolute;
+    right: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1366px) and (max-height: 768px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .game-over {
+        font-size: 10vw;
+    }
+
+    .message {
+        font-size: 5em;
+    }
+
+    .image, .arrow {
+        width: 10vw;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .game-over {
+        font-size: 15vw;
+    }
+
+    .message {
+        font-size: 8vw;
+    }
+
+    .image, .arrow {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        padding: 2vh 2vw;
+    }
+
+    .game-over {
+        font-size: 20vw;
+    }
+
+    .message {
+        font-size: 11vw;
+    }
+
+    .image, .arrow {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        padding: 2vh 2vw;
+    }
+
+    .game-over {
+        font-size: 20vw;
+    }
+
+    .message {
+        font-size: 12vw;
+    }
+
+    .image, .arrow {
+        width: 25vw;
+    }
+}
